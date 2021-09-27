@@ -27,9 +27,7 @@ import kotlinx.android.synthetic.main.layout_weather_additional_info.*
 import kotlinx.android.synthetic.main.layout_weather_basic_info.*
 import java.util.*
 import androidx.appcompat.app.AppCompatDelegate
-
-
-
+import com.birbal.weatherapp.utils.display.Toaster
 
 
 class MainActivity : BaseActivity<HomePageViewModel>() {
@@ -49,16 +47,20 @@ class MainActivity : BaseActivity<HomePageViewModel>() {
 
     override fun setupView(savedInstanceState: Bundle?) {
 
-        btn_change_theme.setOnClickListener {
-            if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-            } else {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-            }
-
+        btn_light_theme.setOnClickListener {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
             finish()
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
+
         }
+
+        btn_dark_theme.setOnClickListener {
+
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            finish()
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+
     }
 
     override fun onStart() {

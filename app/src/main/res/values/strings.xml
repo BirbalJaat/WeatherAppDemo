@@ -10,15 +10,16 @@
     <string name="server_connection_error">Not able to connect, please retry again</string>
     <string name="network_login_again">Please log in again</string>
 
-    <string name="view_weather">View Weather</string>
     <string name="degree_celsius_symbol">°C</string>
     <string name="description_weather_condition_icon">weather condition icon</string>
     <string name="label_humidity">Humidity</string>
     <string name="label_pressure">Pressure</string>
     <string name="label_visibility">Visibility</string>
-    <string name="label_sunrise">Sunrise</string>
-    <string name="label_sunset">Sunset</string>
     <string name="change_theme">Change Theme</string>
     <string name="change_language">Change Language</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="light_theme">Light Theme</string>
+    <string name="already_light_mode">App is having light mode only</string>
+    <string name="already_night_mode">App is having night mode only</string>
 
 </resources>
